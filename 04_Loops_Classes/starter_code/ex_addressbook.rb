@@ -9,14 +9,18 @@
 require 'pry'
 
 def contacts_count(contacts)
+contacts.length
 end
 
 #create a contact using the hash syntax
 def create_contact(name, telephone, email)
+	contact = {:name => name, :telephone => telephone, :email => email}
 end
 
 #iterate through all contacts. Print THE name, email & telephone using iterpolation "#{this_syntax_is} interpolation" 
 def contact_log(contacts)
+	 "Name: #{name}, #{telephone}, #{email}"
+
 end
 
 #find a specific contact and print the telephone number
@@ -24,19 +28,20 @@ def find_and_call_contact(contacts, name)
 end
 
 def add_to_contacts(contacts, contact)
+
 end
 
 #array to hold each contact
 contacts = []
 
 # #Examples. Only directional you can do this whatever way you like
-# contact = create_contact("kisha", "555-555-5555", "kisha@example.com")
+contact = create_contact("kisha", "555-555-5555", "kisha@example.com")
 # add_to_contacts(contacts, contact)
 #
-# contact = create_contact("david", "222-222-2222", "david@example.com")
+contact = create_contact("david", "222-222-2222", "david@example.com")
 # add_to_contacts(contacts, contact)
 #
-# contact = create_contact("nicole", "444-444-4444", "nicole@example.com")
+contact = create_contact("nicole", "444-444-4444", "nicole@example.com")
 # add_to_contacts(contacts, contact)
 #
 # ####
@@ -46,5 +51,5 @@ contacts = []
 # name = "kisha"
 # find_and_call_contact(contacts, name)
 #
-# #contact_logs
+# contact_logs
 # contact_log(contacts)
