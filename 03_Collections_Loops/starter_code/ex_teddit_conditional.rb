@@ -35,5 +35,5 @@ puts "Please enter a News story:"
 story = get_input
 puts "Please give it a category:"
 category = get_input
-upvotes = calculate_upvotes(story, category)
+story[:upvotes] = calculate_upvotes(story[:title], category[:title])
 puts "New story added! #{story}, Category: #{category.capitalize}, Current Upvotes: #{upvotes}"
