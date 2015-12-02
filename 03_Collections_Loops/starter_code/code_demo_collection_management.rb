@@ -12,7 +12,7 @@ time_travelers = {the_doctor: "TARDIS", hermione: "Time Turner", marty_mcfly: "D
 time_travelers.each {|time_traveler, vehicle| puts "#{time_traveler} travels through time with a #{vehicle}"}
 puts
 
-# What about an array of hashes?
+# What about an array of hashes? this is an array of hashes, we know since it starts with a square bracket
 tv_shows = [
   {"show_name" => "Doctor Who", "protagonist" => "The Doctor and his companions"},
   {"show_name" => "Buffy The Vampire Slayer", "protagonist" => "Buffy and the Scooby Gang"},
