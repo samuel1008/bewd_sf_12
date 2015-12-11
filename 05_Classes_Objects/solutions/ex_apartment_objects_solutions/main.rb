@@ -1,4 +1,3 @@
-require "pry"
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
@@ -18,8 +17,6 @@ a1 = Apartment.new("1A", 800, 600, 1, 1)
 a2 = Apartment.new("1B", 1400, 900, 2, 1)
 a3 = Apartment.new("2A", 2000, 1200, 3, 2)
 
-# binding.pry
-
 #Create a new building with this name, address and number of apartments
 building = Building.new("Forest Lofts", "125 Elm St", 3)
 
@@ -29,15 +26,13 @@ building.apartments = [a1, a2, a3]
 #display the building's apartments
 puts "The building #{building.name} has the following apartments:"
 building.display_apartments() 
-
-
 # "Unit 1A has 600 sqft, 1 bed, 1 bath, it's available!"
 # "Unit 1B has 1400 sqft, 2 bed, 1 bath, it's available!"
 # "Unit 2A has 2000 sqft, 3 bed, 2 bath, it's available!"
 # => nil
 
 #create a renter with name, a budget, and a credit score
-steve = Person.new("Steve", 1000, 650)
+steve = new Person("Steve", 1000, 650)
 
 puts "Now Steve wants to rent an apartment."
 

@@ -20,7 +20,7 @@ end
 
 def contact_log(contacts)
   contacts.each do |contact|
-    puts "Name: #{contact[:name]}. Tele: #{contact[:telephone]}. Email: #{contact[:email]}"
+    puts "Name: #{contact[:name]}, Tele: #{contact[:telephone]}, Email: #{contact[:email]}"
   end
 end
 

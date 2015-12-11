@@ -22,9 +22,9 @@ require 'pry'
 ###
 #HINT: you need to use require_relative here
 ###
-#require_relative 'lib/grocerystore'
+# require_relative 'lib/grocerystore'
 #OR 
-#require_relative 'hint_lib/grocerystore'
+require_relative 'hint_lib/grocerystore'
 
 #create a new grocery store named Safeway
 safeway = GroceryStore.new("Safeway")
@@ -34,14 +34,16 @@ safeway = GroceryStore.new("Safeway")
 # => inventory = { 'banana'=> {price: 1, quantity: 5} }
 #USE THE STRING "banana" as the KEY (not a symbol, it just makes it easier later)
 safeway.stock_item('banana', 1, 5)
-
+#oatmeal is a string so we need use " " when we try to find the value
+#on pry we'll type safeway.inventory["oatmeal"][:price]
 safeway.stock_item('oatmeal', 2, 10)
 safeway.stock_item('chocolate', 1.50 , 2)
 
 safeway.view_item('banana')
-# => "Safeway has 5 bananas for 1 dollar each."
 
-#create a new customer named Jack who has $10
+# => "Safeway has 5 bananas for 1 dollar each."
+# binding.pry
+create a new customer named Jack who has $10
 jack = Customer.new("Jack", 10)
 
 #currently jack has no items:
@@ -69,7 +71,7 @@ jack.add_to_cart(safeway, 'oatmeal', 6)
 
 #but when he tries to check out, he doesn't have enough money!
 jack.checkout(safeway)
-# => "Insufficient Funds. Your shopping cart has been cleared."
+# # => "Insufficient Funds. Your shopping cart has been cleared."
 
 =begin
 #BONUS 

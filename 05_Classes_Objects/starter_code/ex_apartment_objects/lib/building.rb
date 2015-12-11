@@ -21,3 +21,4 @@ class Building
 		end
 	end
 end
+
