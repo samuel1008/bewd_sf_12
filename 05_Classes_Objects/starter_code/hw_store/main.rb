@@ -25,7 +25,7 @@ require 'pry'
 # require_relative 'lib/grocerystore'
 #OR 
 require_relative 'hint_lib/grocerystore'
-
+require_relative 'hint_lib/customer.rb'
 #create a new grocery store named Safeway
 safeway = GroceryStore.new("Safeway")
 
@@ -43,7 +43,7 @@ safeway.view_item('banana')
 
 # => "Safeway has 5 bananas for 1 dollar each."
 # binding.pry
-create a new customer named Jack who has $10
+# create a new customer named Jack who has $10
 jack = Customer.new("Jack", 10)
 
 #currently jack has no items:
