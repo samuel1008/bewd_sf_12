@@ -1,5 +1,8 @@
 #iTunes!
+require 'pry'
 require_relative "lib/album"
+# require_relative "lib/collection"
+require_relative "lib/playlist"
 
 #We are going to write a very basic 
 
@@ -13,12 +16,13 @@ end
 #Create an albums class that has a list of songs, title, artist, and genre
 #(title, song_list, artist, genre)
 wish_you = Album.new("Wish You Were Here", 
+	#this is an array because of the square brackets, which is why we don't need to specify in albums
 		["Shine On You Crazy Diamond I-IV", 
 		"Welcome to the Machine",
 		"Have a Cigar",
 		"Wish You Were Here",
 		"Shine On You Crazy Diamond V-VIII"],
-	"Pink Floyd",
+	"Pink Floyd",     
 	"Rock")
 
 assert_equal(wish_you.genre, "Rock")
@@ -54,6 +58,7 @@ assert_equal(wish_you.song_list, ["Shine On You Crazy Diamond I-IV",
 #iTunes also has playlists. Make a playlist class. 
 #Make a new file in the lib folder for the Playlist class, make sure to add a new "require_relative"
 sweet_tunes = Playlist.new("Sweet Tunes", 
+	#here we have another array since it's inside the square bracket
 	[ 	"Have a Cigar",
 		"Here Comes the Sun",
 		"Sound of Silence"
@@ -66,7 +71,7 @@ Maybe you should make a parent class!
 	Call it Collection. 
 	Make sure it has it's own file and make sure to add all the necessary "require_relative"
 =end
-
+binding.pry
 puts "===================
 Play Sweet Tunes
 ==============="
