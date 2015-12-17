@@ -1,7 +1,8 @@
 #iTunes!
 require 'pry'
+require_relative "lib/collection"
 require_relative "lib/album"
-# require_relative "lib/collection"
+
 require_relative "lib/playlist"
 
 #We are going to write a very basic 
@@ -71,7 +72,7 @@ Maybe you should make a parent class!
 	Call it Collection. 
 	Make sure it has it's own file and make sure to add all the necessary "require_relative"
 =end
-binding.pry
+# binding.pry
 puts "===================
 Play Sweet Tunes
 ==============="
