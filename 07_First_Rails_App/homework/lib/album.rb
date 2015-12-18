@@ -10,7 +10,8 @@ class Album < Collection
 		@genre = genre
 		
 	end
-
+# http://stackoverflow.com/questions/2827875/how-do-i-write-a-writer-method-for-a-class-variable-in-ruby
+# need to add self. to write a method for classß
 	def self.help()
 		puts "Albums are created by an artist. And they have a genre."
 	end

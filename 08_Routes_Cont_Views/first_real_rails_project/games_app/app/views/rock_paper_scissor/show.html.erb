@@ -1,0 +1,13 @@
+<h1>Rock Paper Scissor</h1>
+<p><%= @user_guess %></p>
+
+
+<% if @win %>
+	<h2> YOU WIN! </h2>
+		<!-- ruby has a images tag -->
+<% else %>
+	<h2> YOU LOST! </h2>
+	<h2> Your guess: <%= @user_guess %> </h2>
+	<h2> The computer choose <%= @rsp %> </h2>
+	
+<% end %>

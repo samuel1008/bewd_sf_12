@@ -1,0 +1,14 @@
+<h1>You selected: </h1>
+<p><%= @guess%></p>
+
+<% if @results == "win" %>
+	<h2> YOU WIN! 
+		<!-- ruby has a images tag -->
+		
+	</h2>
+<% else %>
+	<h2> YOU LOST! </h2>
+	<h2> Your guess: <%= @guess %> </h2>
+	<h2> The secrest numer was <%= @secret_num %> </h2>
+
+<% end %>
